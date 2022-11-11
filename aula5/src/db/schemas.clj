@@ -54,32 +54,3 @@
    {:db/ident :loja/endereco
     :db/cardinality :db.cardinality/one
     :db/valueType :db.type/string}])
-
-
-(def schema-compras
-  [{:db/ident :compras-promocao/id
-    :db/cardinality :db.cardinality/one
-    :db/unique :db.unique/identity
-    :db/valueType :db.type/string}
-   
-   {:db/ident :compras-promocao/valor
-    :db/cardinality :db.cardinality/one
-    :db/valueType :db.type/long}
-
-   {:db/ident :compras-promocao/cliente
-    :db/cardinality :db.cardinality/one
-    :db/valueType :db.type/ref}
-
-   {:db/ident :compras-promocao/loja
-    :db/cardinality :db.cardinality/one
-    :db/valueType :db.type/ref}
-
-   {:db/ident :compras-promocao/produto
-    :db/cardinality :db.cardinality/one
-    :db/valueType :db.type/ref}
-
-   {:db/ident :compras-promocao/cliente+produto
-    :db/valueType :db.type/tuple
-    :db/tupleAttrs [:compras-promocao/cliente :compras-promocao/produto]
-    :db/cardinality :db.cardinality/one
-    :db/unique :db.unique/identity}])

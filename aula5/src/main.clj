@@ -86,14 +86,6 @@
 ;; (def db-before (d/as-of (d/db service/conn) X)
 
 
-(def pattern
-  [:compras-promocao/cliente+produto
-   {:compras-promocao/cliente
-    [:cliente/id :cliente/nome]}
-   {:compras/produto
-    [:produto/nome :produto/preco]}])
-
-
 ;; catch de erro para quando a verificacao do predicado falha
 ;; (try (d/transact service/conn
 ;;                  {:tx-data

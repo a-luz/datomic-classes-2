@@ -49,16 +49,3 @@
    {:loja/id (str (java.util.UUID/randomUUID))
     :loja/nome "loja 2"
     :loja/endereco "Endereco 2"}])
-
-
-(def compra
-  [{:compras/id (str (java.util.UUID/randomUUID))
-    :compras/valor 123123
-    :compras/cliente [:cliente/id "765a7723-d010-4dfc-b32b-708c0c9aee97"]
-    :compras/produto [:loja/id "59deee35-8bb3-4f8f-9a5d-690045f37d8e"]}])
-
-
-[{:compras-promocao/id (str (java.util.UUID/randomUUID))
-  :compras-promocao/valor 123123
-  :compras-promocao/cliente [:cliente/id "765a7723-d010-4dfc-b32b-708c0c9aee97"]
-  :compras-promocao/produto [:loja/id "59deee35-8bb3-4f8f-9a5d-690045f37d8e"]}]

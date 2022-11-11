@@ -1,0 +1,1 @@
+["^ ","~$string-not-empty?",["^ ","~:row",3,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$db.predicates","~:top-ns","^7","~:arities",["^ ","~i1",["^ ","~:ret",["^4",["~:boolean"]]]]],"~:filename","/home/a-luz/ada/clojure/datomic-examples/src/db/predicates.clj"]
